@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuan Carlo M. Chin — Web Developer</title>
+  <meta name="description"
+    content="Portfolio of Yuan Carlo M. Chin, a web developer specializing in clean, minimal, and functional digital experiences. BSIT student at Holy Angel University." />
+  <meta name="keywords"
+    content="Yuan Carlo Chin, web developer, portfolio, Holy Angel University, BSIT, frontend developer Philippines" />
+  <meta name="author" content="Yuan Carlo M. Chin" />
+  <meta property="og:title" content="Yuan Carlo M. Chin — Web Developer" />
+  <meta property="og:description" content="Building refined digital experiences with discipline and clarity." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress -->
+  <div id="prog" role="progressbar" aria-label="Scroll progress"></div>
+
+  <!-- ══ NAVIGATION (only one) ══ -->
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo"><img src="assets/logo.png" alt="YC Logo"
+          class="nav-logo-img" />YC<em>.chin</em></a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="theme-btn" id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-label="Mobile navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">◐</button>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         § 1 — HOME
+    ══════════════════════════════════════════ -->
+    <section id="home" aria-label="Introduction">
+      <div class="wrap">
+        <div class="hero-container">
+          <!-- Left: text content -->
+          <div class="hero-left">
+            <h1 class="hero-name reveal d1">
+              Yuan Carlo
+              <em>M. Chin</em>
+            </h1>
+
+            <p class="hero-role reveal d2"><span id="typed-role"></span><span class="typed-cursor">|</span></p>
+
+            <p class="hero-tagline reveal d3">
+              I build clean, structured interfaces with thoughtful design — focused on creating smooth,
+              seamless experiences from start to finish.
+            </p>
+
+            <div class="hero-cta reveal d4">
+              <a href="#projects" class="btn btn-fill">View Projects</a>
+              <a href="#contact" class="btn btn-out">Contact Me</a>
+            </div>
+
+            <div class="hero-stats reveal d4">
+              <div>
+                <span class="stat-n">3+</span>
+                <span class="stat-l">Years Studying</span>
+              </div>
+              <div>
+                <span class="stat-n">3</span>
+                <span class="stat-l">Live Project</span>
+              </div>
+              <div>
+                <span class="stat-n">12+</span>
+                <span class="stat-l">Technologies</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Photo holder -->
+          <div class="hero-right">
+            <div class="photo-holder reveal d2">
+              <img src="assets/photo.png" alt="Yuan Carlo M. Chin" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+         § 2 — ABOUT
+    ══════════════════════════════════════════ -->
+    <section id="about" class="alt" aria-label="About">
+      <div class="wrap">
+        <p class="sec-label reveal">Background</p>
+        <h2 class="reveal d1" style="margin-bottom:60px;">About Me</h2>
+
+        <div class="about-grid">
+
+          <!-- Bio -->
+          <div class="about-text">
+            <div class="reveal">
+              <p>I'm <strong>Yuan Carlo M. Chin</strong>, a 3rd-year BSIT student at Holy Angel University and a Dean’s
+                Lister every semester, specializing in Web Development.</p>
+
+              <p>I create clean and thoughtful interfaces, always considering the user experience from frontend to
+                backend. I’m <Strong>eager</Strong> to learn, grow under experienced mentors, and keep improving my
+                skills. Currently,
+                I’m <strong>open to internship opportunities</strong> in web development, ready to contribute and gain
+                real-world experience.</p>
+            </div>
+            <div class="reveal d2" style="margin-top:36px;">
+              <a href="#contact" class="btn btn-fill">Get In Touch</a>
+            </div>
+          </div>
+
+          <!-- Education + Approach cards -->
+          <div>
+            <p class="sec-label reveal">Education</p>
+            <div class="edu-card reveal d1">
+              <div class="edu-school">Holy Angel University · Pampanga</div>
+              <div class="edu-deg">Bachelor of Science in Information Technology</div>
+              <div class="edu-yr">Web Development Track · 2023 — Present</div>
+              <div class="dean-badges">
+                <span class="dean-badge">1st Year</span>
+                <span class="dean-badge">2nd Year 1st Sem</span>
+                <span class="dean-badge">3rd Year 1st Sem</span>
+              </div>
+            </div>
+
+            <div class="reveal d2" style="display:flex; flex-direction:column; gap:14px; margin-top:20px;">
+              <div style="padding:18px; border:1px solid var(--border); border-radius:4px;">
+                <div class="sec-label" style="margin-bottom:8px;">Design Philosophy</div>
+                <p style="font-size:0.86rem; color:var(--muted); line-height:1.72;">Interfaces should be invisible. When
+                  design works, users don't notice it — they just accomplish what they came to do.</p>
+              </div>
+              <div style="padding:18px; border:1px solid var(--border); border-radius:4px;">
+                <div class="sec-label" style="margin-bottom:8px;">Development Standard</div>
+                <p style="font-size:0.86rem; color:var(--muted); line-height:1.72;">Code is written once and read many
+                  times. I write for the developer who comes next, not just for the machine running it.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills-wrap">
+          <p class="sec-label reveal">Capabilities</p>
+          <h3 class="reveal d1" style="font-size:1.8rem; margin-bottom:44px;">Skills & Tools</h3>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:56px;">
+            <div>
+              <div class="skill-group reveal">
+                <div class="skill-group-title">Frontend</div>
+                <div class="skill-row"><span class="skill-nm">HTML / CSS</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="92"></div>
+                  </div><span class="skill-pct">92%</span>
+                </div>
+                <div class="skill-row"><span class="skill-nm">JavaScript</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="82"></div>
+                  </div><span class="skill-pct">82%</span>
+                </div>
+                <div class="skill-row"><span class="skill-nm">Vue.js</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="74"></div>
+                  </div><span class="skill-pct">74%</span>
+                </div>
+                <div class="skill-row"><span class="skill-nm">Angular</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="68"></div>
+                  </div><span class="skill-pct">68%</span>
+                </div>
+                <div class="skill-row"><span class="skill-nm">Flutter</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="65"></div>
+                  </div><span class="skill-pct">65%</span>
+                </div>
+              </div>
+              <div class="skill-group reveal d1">
+                <div class="skill-group-title">Backend & Databases</div>
+                <div class="skill-row"><span class="skill-nm">PHP</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="75"></div>
+                  </div><span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-row"><span class="skill-nm">MySQL</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="78"></div>
+                  </div><span class="skill-pct">78%</span>
+                </div>
+                <div class="skill-row"><span class="skill-nm">MongoDB</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="62"></div>
+                  </div><span class="skill-pct">62%</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="skill-group reveal">
+                <div class="skill-group-title">Tools & Platforms</div>
+                <div class="skill-row"><span class="skill-nm">WordPress</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="85"></div>
+                  </div><span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-row"><span class="skill-nm">Git / GitHub</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="80"></div>
+                  </div><span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-row"><span class="skill-nm">Figma</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="72"></div>
+                  </div><span class="skill-pct">72%</span>
+                </div>
+                <div class="skill-row"><span class="skill-nm">Photoshop</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="68"></div>
+                  </div><span class="skill-pct">68%</span>
+                </div>
+                <div class="skill-row"><span class="skill-nm">VS Code</span>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-w="95"></div>
+                  </div><span class="skill-pct">95%</span>
+                </div>
+              </div>
+              <div class="skill-group reveal d1">
+                <div class="skill-group-title">Soft Skills</div>
+                <div class="soft-grid">
+                  <div class="soft-item">Problem Solver</div>
+                  <div class="soft-item">Team Player</div>
+                  <div class="soft-item">Detail-Oriented</div>
+                  <div class="soft-item">Emotionally Resilient</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         § 3 — PROJECTS
+    ══════════════════════════════════════════ -->
+    <section id="projects" aria-label="Projects">
+      <div class="wrap">
+        <p class="sec-label reveal">Selected Work</p>
+        <h2 class="reveal d1">Projects</h2>
+
+        <div class="proj-grid">
+
+          <!-- Project 1: Galang Dental Center -->
+          <article class="proj-card reveal d1">
+            <div class="proj-thumb">
+              <img src="assets/galang-preview.png" alt="Galang Dental Center preview" loading="lazy" />
+            </div>
+            <div class="proj-body">
+              <span class="badge badge-done">Completed</span>
+              <h3>Galang Dental Center</h3>
+              <p>A professional dental clinic website — patient-friendly UX, clear service presentation, and clean
+                mobile-first design.</p>
+              <div class="tags">
+                <span class="tag">WordPress</span>
+                <span class="tag">Figma</span>
+              </div>
+              <button class="arrow-link" onclick="openModal('galang')" aria-label="View Galang Dental details">View
+                Details</button>
+            </div>
+          </article>
+
+          <!-- Project 2: KOMA PH -->
+          <article class="proj-card reveal d2">
+            <div class="proj-thumb">
+              <img src="assets/koma-preview.png" alt="KOMA PH preview" loading="lazy" />
+            </div>
+            <div class="proj-body">
+              <span class="badge badge-done">Completed</span>
+              <h3>KOMA PH Inventory and Order Management</h3>
+              <p>Built a full-stack web app using MongoDB, Express, Vue, and Node.js to automate inventory and order
+                workflows for a clothing brand.</p>
+              <div class="tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <button class="arrow-link" onclick="openModal('koma')" aria-label="View KOMA PH details">View
+                Details</button>
+            </div>
+          </article>
+
+          <!-- Project 3: GYAT HUB PS5 Game Store -->
+          <article class="proj-card reveal d3">
+            <div class="proj-thumb">
+              <img src="assets/gyat-preview.png" alt="GYAT HUB PS5 Game Store preview" loading="lazy" />
+            </div>
+            <div class="proj-body">
+              <span class="badge badge-done">Completed</span>
+              <h3>GYAT HUB PS5 Game Store</h3>
+              <p>A comprehensive e-commerce platform for browsing and purchasing PlayStation 5 game titles, built with
+                PHP and MySQL.</p>
+              <div class="tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <button class="arrow-link" onclick="openModal('gyat')" aria-label="View GYAT HUB details">View
+                Details</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         § 4 — RESUME
+    ══════════════════════════════════════════ -->
+    <section id="resume" class="alt" aria-label="Resume">
+      <div class="wrap">
+        <p class="sec-label reveal">Qualifications</p>
+        <h2 class="reveal d1" style="margin-bottom:60px;">Resume</h2>
+
+        <div class="resume-container reveal d2">
+          <div class="resume-preview">
+            <img src="assets/resume.png" alt="Yuan Carlo M. Chin Resume" class="resume-img" />
+          </div>
+
+          <div class="resume-info">
+            <div class="resume-section">
+              <h3 class="resume-section-title">Core Competencies</h3>
+              <ul class="resume-list">
+                <li>Full-stack web development</li>
+                <li>Responsive & mobile-first design</li>
+                <li>Frontend & backend architecture</li>
+                <li>Cross-platform development</li>
+                <li>Clean code practices</li>
+              </ul>
+            </div>
+
+            <div class="resume-section">
+              <h3 class="resume-section-title">Technical Skills</h3>
+              <div class="tech-stack">
+                <span class="tech-badge">HTML/CSS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Vue.js</span>
+                <span class="tech-badge">Angular</span>
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Git / GitHub</span>
+                <span class="tech-badge">Figma</span>
+              </div>
+            </div>
+
+            <a href="assets/resume.pdf" download class="btn btn-fill">Download Complete Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         § 5 — CONTACT
+    ══════════════════════════════════════════ -->
+    <section id="contact" aria-label="Contact">
+      <div class="wrap">
+        <p class="sec-label reveal">Reach Out</p>
+        <h2 class="reveal d1" style="margin-bottom:60px;">Contact</h2>
+        <p class="reveal d2"
+          style="font-size:1rem; color:var(--muted); margin-top:12px; margin-bottom:60px; max-width:520px; line-height:1.8;">
+          I'm available for internship opportunities. Whether you have a role, a project, or just a question — I'd be
+          glad to hear from you.
+        </p>
+
+        <div class="contact-grid">
+
+          <!-- Contact details -->
+          <div>
+            <div class="c-detail reveal">
+              <a href="mailto:chinyuan469@gmail.com">
+                <div class="c-icon">✉</div>
+              </a>
+              <div>
+                <div class="c-lbl">Email</div>
+                <div class="c-val"><a href="mailto:chinyuan469@gmail.com">chinyuan469@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="c-detail reveal d1">
+              <a href="tel:09951294090">
+                <div class="c-icon">☎</div>
+              </a>
+              <div>
+                <div class="c-lbl">Phone</div>
+                <div class="c-val">09951294090</div>
+              </div>
+            </div>
+            <div class="c-detail reveal d1">
+              <div class="c-icon">⌂</div>
+              <div>
+                <div class="c-lbl">Location</div>
+                <div class="c-val">Pampanga, Philippines</div>
+              </div>
+            </div>
+            <div class="c-detail reveal d2">
+              <a href="https://github.com/yuan-chin" target="_blank" rel="noopener">
+                <div class="c-icon">↗</div>
+              </a>
+              <div>
+                <div class="c-lbl">GitHub</div>
+                <div class="c-val"><a href="https://github.com/yuan-chin" target="_blank"
+                    rel="noopener">github.com/yuancarlomchin</a></div>
+              </div>
+            </div>
+            <div class="c-detail reveal d2">
+              <a href="https://www.linkedin.com/in/yuanchin/" target="_blank" rel="noopener">
+                <div class="c-icon" style="font-size:0.7rem;font-weight:600;">in</div>
+              </a>
+              <div>
+                <div class="c-lbl">LinkedIn</div>
+                <div class="c-val"><a href="https://www.linkedin.com/in/yuanchin/" target="_blank"
+                    rel="noopener">linkedin.com/in/yuan-carlo-chin</a></div>
+              </div>
+            </div>
+
+            <div class="avail-box reveal d3">
+              <div class="avail-label">
+                <span class="avail-dot"></span>
+                Availability
+              </div>
+              <p>Currently open to internship positions in 2026. Web development, frontend.</p>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <div class="reveal d2">
+            <p class="sec-label" style="margin-bottom:24px;">Send a Message</p>
+
+            <form id="contact-form" novalidate aria-label="Contact form">
+              <div class="fg">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name"
+                  aria-required="true" aria-describedby="name-err" />
+                <span class="err" id="name-err" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="fg">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email"
+                  aria-required="true" aria-describedby="email-err" />
+                <span class="err" id="email-err" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="fg">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+              </div>
+              <div class="fg">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your opportunity or project…"
+                  aria-required="true" aria-describedby="msg-err"></textarea>
+                <span class="err" id="msg-err" role="alert" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn-fill" style="align-self:flex-start;">Send Message</button>
+            </form>
+
+            <div id="form-success" class="form-success" role="status" aria-live="polite">
+              <div class="s-icon">✓</div>
+              <h3>Message Sent</h3>
+              <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="foot-inner">
+
+      <!-- Brand -->
+      <div class="foot-brand">
+        <span class="foot-name">Yuan Carlo M. Chin</span>
+        <span class="foot-copy">© 2026 · Built with discipline</span>
+      </div>
+
+      <!-- Nav links -->
+      <div class="foot-nav">
+        <a href="#home">Home</a>
+        <a href="about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Contact quick-links -->
+      <div class="foot-contact">
+        <a href="mailto:chinyuan469@gmail.com" class="foot-citem">
+          <span class="foot-cicon">✉</span>chinyuan469@gmail.com
+        </a>
+        <span class="foot-citem">
+          <span class="foot-cicon">⌂</span>Pampanga, Philippines
+        </span>
+        <a href="https://github.com/yuan-chin" target="_blank" rel="noopener" class="foot-citem">
+          <span class="foot-cicon">↗</span>github.com/yuancarlomchin
+        </a>
+        <a href="https://www.linkedin.com/in/yuanchin/" target="_blank" rel="noopener" class="foot-citem">
+          <span class="foot-cicon foot-cicon-in">in</span>linkedin.com/in/yuan-carlo-chin
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+       PROJECT MODALS
+  ══════════════════════════════════════════ -->
+
+  <!-- Modal: Galang Dental Center -->
+  <div class="modal-overlay" id="modal-galang" role="dialog" aria-modal="true" aria-labelledby="mg-title">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('galang')" aria-label="Close modal">✕</button>
+      <div class="modal-head">
+        <span class="badge badge-done">Completed</span>
+        <h2 id="mg-title">Galang Dental Center</h2>
+        <div class="modal-meta">
+          <span>2024</span>
+          <span>WordPress · Figma</span>
+          <span>WEB DESIGNER</span>
+          <span>SEO OPTIMIZER</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p>Designed and built a professional dental clinic website to establish an online presence, improve patient
+          accessibility, and clearly present services.</p>
+        <div class="feat-title">Key Contributions</div>
+        <ul class="feat-list">
+          <li>Designed the full UI/UX in Figma, creating a patient-friendly layout with clear service presentation and
+            mobile-first responsiveness.</li>
+          <li>Built the website on WordPress with custom styling, ensuring a clean and professional look that reflects
+            the clinic's quality of care.</li>
+        </ul>
+        <div class="modal-imgs">
+          <div class="img-ph">
+            <img src="assets/galang-preview.png" alt="Galang Dental Center homepage" loading="lazy" />
+          </div>
+        </div>
+        <div class="tags" style="margin-bottom:28px;">
+          <span class="tag">WordPress</span>
+          <span class="tag">Figma</span>
+        </div>
+        <a href="https://galangdentalcenter.com" target="_blank" rel="noopener" class="btn btn-fill">Visit Website</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: KOMA PH -->
+  <div class="modal-overlay" id="modal-koma" role="dialog" aria-modal="true" aria-labelledby="mkoma-title">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('koma')" aria-label="Close modal">✕</button>
+      <div class="modal-head">
+        <span class="badge badge-done">Completed</span>
+        <h2 id="mkoma-title">KOMA PH Inventory and Order Management System</h2>
+        <div class="modal-meta">
+          <span>2024</span>
+          <span>Vue.js · Node.js · MongoDB · Express</span>
+          <span>Full-Stack Developer</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p>Built a full-stack web app using MongoDB, Express, Vue, and Node.js to automate inventory and order workflows
+          for a clothing brand.</p>
+        <div class="feat-title">Key Contributions</div>
+        <ul class="feat-list">
+          <li>Developed a responsive Vue.js frontend connected via Fetch API for instant stock updates and seamless
+            order placement.</li>
+          <li>Implemented secure authentication and bcryptjs encryption, ensuring full compliance with the Data Privacy
+            Act of 2012.</li>
+        </ul>
+        <div class="modal-imgs">
+          <div class="img-ph">
+            <img src="assets/koma-preview.png" alt="KOMA PH homepage" loading="lazy" />
+          </div>
+        </div>
+        <div class="tags" style="margin-bottom:28px;">
+          <span class="tag">Vue.js</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Express</span>
+        </div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="https://koma-ph.netlify.app/" target="_blank" rel="noopener" class="btn btn-fill">Visit Website</a>
+          <a href="https://github.com/yuan-chin/6WCSERVER-WD-303-KOMA-PH-Inventory-and-Order-Management-System"
+            target="_blank" rel="noopener" class="btn btn-out">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: GYAT HUB PS5 Game Store -->
+  <div class="modal-overlay" id="modal-gyat" role="dialog" aria-modal="true" aria-labelledby="mgyat-title">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('gyat')" aria-label="Close modal">✕</button>
+      <div class="modal-head">
+        <span class="badge badge-done">Completed</span>
+        <h2 id="mgyat-title">GYAT HUB PS5 Game Store</h2>
+        <div class="modal-meta">
+          <span>2024</span>
+          <span>PHP · MySQL · HTML · CSS · JavaScript</span>
+          <span>Full-Stack Developer</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p>This program is programmed by using PHP, MySQL, HTML, CSS, and JavaScript. The rationale of creating this
+          system is that it will assist GYAT HUB in providing gamers with a comprehensive, user-friendly, and efficient
+          platform for browsing and purchasing PlayStation 5 game titles.</p>
+        <div class="feat-title">Key Contributions</div>
+        <ul class="feat-list">
+          <li>Implemented a streamlined online retail platform to minimize manual processes and enhance customer
+            satisfaction.</li>
+          <li>Designed a user-friendly interface for browsing and purchasing PS5 game titles with efficient search and
+            filtering capabilities.</li>
+          <li>Built a MySQL-backed database for managing game inventory, user accounts, and order processing.</li>
+          <li>Demonstrated how web technologies can be used in addressing real-life e-commerce and business management
+            challenges.</li>
+        </ul>
+        <div class="modal-imgs">
+          <div class="img-ph">
+            <img src="assets/gyat-preview.png" alt="GYAT HUB PS5 Game Store homepage" loading="lazy" />
+          </div>
+        </div>
+        <div class="tags" style="margin-bottom:28px;">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
