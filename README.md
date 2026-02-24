@@ -48,7 +48,7 @@ Providing an accessible way for companies to review my work
 
 # Author
 
-Yuan Carlo M. Chin
+Yuan Carlo M. Chin |
 Bachelor of Science in Information Technology |
 Web Development |
 Holy Angel University |
