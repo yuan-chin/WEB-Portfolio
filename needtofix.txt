@@ -1,0 +1,1 @@
+In project the view detail all of them should be in the same line

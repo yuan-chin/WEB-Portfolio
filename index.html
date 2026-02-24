@@ -42,6 +42,7 @@
       </ul>
 
       <div class="nav-right">
+        <a href="assets/resume.pdf" target="_blank" rel="noopener" class="nav-resume-btn">Resume ↗</a>
         <button class="theme-btn" id="theme-toggle" aria-label="Toggle dark mode">◐</button>
         <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -75,7 +76,10 @@
               <em>M. Chin</em>
             </h1>
 
-            <p class="hero-role reveal d2"><span id="typed-role"></span><span class="typed-cursor">|</span></p>
+            <p class="hero-role reveal d2">
+              <span id="typed-role"></span>
+              <span class="typed-cursor">|</span>
+            </p>
 
             <p class="hero-tagline reveal d3">
               I build clean, structured interfaces with thoughtful design — focused on creating smooth,
@@ -84,7 +88,17 @@
 
             <div class="hero-cta reveal d4">
               <a href="#projects" class="btn btn-fill">View Projects</a>
-              <a href="#contact" class="btn btn-out">Contact Me</a>
+              <a href="#contact" class="btn btn-out">Hire Me</a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="hero-socials reveal d2" style="margin-top:24px; display:flex; gap:16px;">
+              <a href="https://github.com/yuan-chin" target="_blank" rel="noopener" aria-label="GitHub">
+                <img src="assets/github-icon.gif" alt="GitHub" style="width:24px; height:24px;">
+              </a>
+              <a href="https://www.linkedin.com/in/yuanchin/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="assets/linkedin-icon.gif" alt="LinkedIn" style="width:24px; height:24px;">
+              </a>
             </div>
 
             <div class="hero-stats reveal d4">
@@ -110,6 +124,53 @@
             </div>
           </div>
         </div>
+
+        <!-- Featured Projects -->
+        <div class="featured-projects reveal d4">
+          <p class="sec-label">Featured Work</p>
+          <h3 style="font-size:1.8rem; margin-bottom:36px;">Top Projects</h3>
+
+          <div class="featured-grid">
+
+            <!-- Featured 1: Galang Dental -->
+            <a href="#projects" class="feat-card" onclick="setTimeout(()=>openModal('galang'),400)">
+              <div class="feat-thumb">
+                <img src="assets/galang-preview.png" alt="Galang Dental Center" loading="lazy" />
+              </div>
+              <div class="feat-info">
+                <h4>Galang Dental Center</h4>
+                <p>Professional dental clinic website with patient-friendly UX and mobile-first design.</p>
+                <span class="feat-link">View Details →</span>
+              </div>
+            </a>
+
+            <!-- Featured 2: KOMA PH -->
+            <a href="#projects" class="feat-card" onclick="setTimeout(()=>openModal('koma'),400)">
+              <div class="feat-thumb">
+                <img src="assets/koma-preview.png" alt="KOMA PH" loading="lazy" />
+              </div>
+              <div class="feat-info">
+                <h4>KOMA PH Order Management</h4>
+                <p>Full-stack MEVN app automating inventory and order workflows for a clothing brand.</p>
+                <span class="feat-link">View Details →</span>
+              </div>
+            </a>
+
+            <!-- Featured 3: GYAT HUB -->
+            <a href="#projects" class="feat-card" onclick="setTimeout(()=>openModal('gyat'),400)">
+              <div class="feat-thumb">
+                <img src="assets/gyat-preview.png" alt="GYAT HUB PS5 Game Store" loading="lazy" />
+              </div>
+              <div class="feat-info">
+                <h4>GYAT HUB PS5 Game Store</h4>
+                <p>E-commerce platform for browsing and purchasing PS5 titles, built with PHP &amp; MySQL.</p>
+                <span class="feat-link">View Details →</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -186,13 +247,13 @@
                 </div>
                 <div class="skill-row"><span class="skill-nm">JavaScript</span>
                   <div class="skill-track">
-                    <div class="skill-fill" data-w="82"></div>
-                  </div><span class="skill-pct">82%</span>
+                    <div class="skill-fill" data-w="67"></div>
+                  </div><span class="skill-pct">67%</span>
                 </div>
                 <div class="skill-row"><span class="skill-nm">Vue.js</span>
                   <div class="skill-track">
-                    <div class="skill-fill" data-w="74"></div>
-                  </div><span class="skill-pct">74%</span>
+                    <div class="skill-fill" data-w="64"></div>
+                  </div><span class="skill-pct">64%</span>
                 </div>
                 <div class="skill-row"><span class="skill-nm">Angular</span>
                   <div class="skill-track">
@@ -219,8 +280,8 @@
                 </div>
                 <div class="skill-row"><span class="skill-nm">MongoDB</span>
                   <div class="skill-track">
-                    <div class="skill-fill" data-w="62"></div>
-                  </div><span class="skill-pct">62%</span>
+                    <div class="skill-fill" data-w="72"></div>
+                  </div><span class="skill-pct">72%</span>
                 </div>
               </div>
             </div>
@@ -240,8 +301,8 @@
                 </div>
                 <div class="skill-row"><span class="skill-nm">Figma</span>
                   <div class="skill-track">
-                    <div class="skill-fill" data-w="72"></div>
-                  </div><span class="skill-pct">72%</span>
+                    <div class="skill-fill" data-w="82"></div>
+                  </div><span class="skill-pct">82%</span>
                 </div>
                 <div class="skill-row"><span class="skill-nm">Photoshop</span>
                   <div class="skill-track">
@@ -264,6 +325,104 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="certs-wrap">
+          <p class="sec-label reveal">Credentials</p>
+          <h3 class="reveal d1" style="font-size:1.8rem; margin-bottom:44px;">Certifications</h3>
+
+          <div class="certs-grid">
+
+            <!-- Development -->
+            <div class="cert-card reveal">
+              <div class="cert-icon"><img src="assets/certificate-icon.gif" alt="Certificate" /></div>
+              <div class="cert-body">
+                <h4>Legacy Responsive Web Design</h4>
+                <div class="cert-issuer">freeCodeCamp</div>
+              </div>
+              <a href="assets/Legacy Responsive Web Design.pdf" target="_blank" class="cert-link"
+                title="View Certificate">↗</a>
+            </div>
+
+            <div class="cert-card reveal d1">
+              <div class="cert-icon"><img src="assets/certificate-icon.gif" alt="Certificate" /></div>
+              <div class="cert-body">
+                <h4>Introduction to PHP</h4>
+                <div class="cert-issuer">SoloLearn</div>
+              </div>
+              <a href="assets/Introduction to PHP.pdf" target="_blank" class="cert-link" title="View Certificate">↗</a>
+            </div>
+
+            <!-- Design & UX -->
+            <div class="cert-card reveal d2">
+              <div class="cert-icon"><img src="assets/certificate-icon.gif" alt="Certificate" /></div>
+              <div class="cert-body">
+                <h4>Design Thinking for Beginners</h4>
+                <div class="cert-issuer">Great Learning</div>
+              </div>
+              <a href="assets/Design Thinking for Beginners.pdf" target="_blank" class="cert-link"
+                title="View Certificate">↗</a>
+            </div>
+
+            <div class="cert-card reveal">
+              <div class="cert-icon"><img src="assets/certificate-icon.gif" alt="Certificate" /></div>
+              <div class="cert-body">
+                <h4>Introduction to Graphic Design; Basics of UI/UX</h4>
+                <div class="cert-issuer">Great Learning</div>
+              </div>
+              <a href="assets/Introduction to Graphic Design; Basics of UI UX.pdf" target="_blank" class="cert-link"
+                title="View Certificate">↗</a>
+            </div>
+
+            <div class="cert-card reveal d1">
+              <div class="cert-icon"><img src="assets/certificate-icon.gif" alt="Certificate" /></div>
+              <div class="cert-body">
+                <h4>Website UI/UX Designing using ChatGPT</h4>
+                <div class="cert-issuer">Great Learning</div>
+              </div>
+              <a href="assets/Website UI UX Designing using ChatGPT.pdf" target="_blank" class="cert-link"
+                title="View Certificate">↗</a>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="cert-card reveal d2">
+              <div class="cert-icon"><img src="assets/certificate-icon.gif" alt="Certificate" /></div>
+              <div class="cert-body">
+                <h4>SEO I</h4>
+                <div class="cert-issuer">HubSpot Academy</div>
+              </div>
+              <a href="assets/SEO I.pdf" target="_blank" class="cert-link" title="View Certificate">↗</a>
+            </div>
+
+            <div class="cert-card reveal">
+              <div class="cert-icon"><img src="assets/certificate-icon.gif" alt="Certificate" /></div>
+              <div class="cert-body">
+                <h4>SEO II</h4>
+                <div class="cert-issuer">HubSpot Academy</div>
+              </div>
+              <a href="assets/SEO II.pdf" target="_blank" class="cert-link" title="View Certificate">↗</a>
+            </div>
+
+            <div class="cert-card reveal d1">
+              <div class="cert-icon"><img src="assets/certificate-icon.gif" alt="Certificate" /></div>
+              <div class="cert-body">
+                <h4>Digital Advertising</h4>
+                <div class="cert-issuer">HubSpot Academy</div>
+              </div>
+              <a href="assets/Digital Advertising.pdf" target="_blank" class="cert-link" title="View Certificate">↗</a>
+            </div>
+
+            <div class="cert-card reveal d2">
+              <div class="cert-icon"><img src="assets/certificate-icon.gif" alt="Certificate" /></div>
+              <div class="cert-body">
+                <h4>Content Marketing</h4>
+                <div class="cert-issuer">HubSpot Academy</div>
+              </div>
+              <a href="assets/Content Marketing.pdf" target="_blank" class="cert-link" title="View Certificate">↗</a>
+            </div>
+
           </div>
         </div>
 
