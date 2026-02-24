@@ -1,4 +1,4 @@
-Yuan Carlo M. Chin — OJT Portfolio Website
+# Yuan Carlo M. Chin — OJT Portfolio Website
 
 This project is my personal portfolio website created in preparation for my On-the-Job Training (OJT). It serves as a professional platform where I present my projects, technical skills, certifications, and background as a BSIT student specializing in Web Development.
 
