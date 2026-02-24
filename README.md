@@ -4,13 +4,13 @@ This project is my personal portfolio website created in preparation for my On-t
 
 The purpose of this website is to clearly demonstrate my capabilities in frontend and full-stack development while maintaining a clean, structured, and user-focused design.
 
-Project Overview
+# Project Overview
 
 The portfolio highlights my selected works, including real-world and academic projects. It provides detailed descriptions of my contributions, the technologies I used, and the problems each project aimed to solve.
 
 The design follows a minimal and professional style, focusing on clarity, readability, and smooth user experience across different devices.
 
-Key Features
+# Key Features
 
 Responsive and mobile-first layout
 
@@ -34,7 +34,7 @@ JavaScript
 
 Google Fonts
 
-Purpose for OJT
+# Purpose for OJT
 
 This portfolio was developed to support my OJT application by:
 
@@ -46,7 +46,7 @@ Demonstrating my understanding of responsive design and structured development
 
 Providing an accessible way for companies to review my work
 
-Author
+# Author
 
 Yuan Carlo M. Chin
 Bachelor of Science in Information Technology
