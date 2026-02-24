@@ -24,7 +24,7 @@ Resume preview and download
 
 Contact section for internship opportunities
 
-Technologies Used
+# Technologies Used
 
 HTML5
 
