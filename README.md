@@ -49,7 +49,7 @@ Providing an accessible way for companies to review my work
 # Author
 
 Yuan Carlo M. Chin
-Bachelor of Science in Information Technology
-Web Development Track
-Holy Angel University
+Bachelor of Science in Information Technology |
+Web Development |
+Holy Angel University |
 Pampanga, Philippines
