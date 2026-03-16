@@ -1,0 +1,85 @@
+.img-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+
+  /* Mask-based fade at both edges, mirroring CurvedLoop's width-enter/exit */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+}
+
+.img-marquee-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: img-scroll var(--marquee-speed, 30s) linear infinite;
+}
+
+.img-marquee-track.img-marquee-right {
+  animation-direction: reverse;
+}
+
+.img-marquee-item {
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-marquee-item:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.img-marquee-item img {
+  height: 100%;
+  width: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@keyframes img-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+@media (max-width: 768px) {
+  .img-marquee {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+  }
+
+  .img-marquee-track {
+    gap: 14px;
+  }
+}
