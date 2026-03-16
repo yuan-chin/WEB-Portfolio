@@ -18,7 +18,7 @@ const allSkills = [
   { name: 'WordPress', icon: 'https://cdn.simpleicons.org/wordpress/21759B', color: '#21759B' },
   { name: 'Git / GitHub', icon: 'https://cdn.simpleicons.org/github/ffffff', color: '#ffffff' },
   { name: 'Figma', icon: 'https://cdn.simpleicons.org/figma/F24E1E', color: '#F24E1E' },
-  { name: 'VS Code', icon: 'https://cdn.simpleicons.org/visualstudiocode/007ACC', color: '#007ACC' },
+  { name: 'VS Code', icon: '/assets/visual-studio-code.png', color: '#007ACC' },
 ];
 
 const frontendSkills = [
@@ -39,7 +39,7 @@ const toolsSkills = [
   { name: 'WordPress', icon: 'https://cdn.simpleicons.org/wordpress/21759B', color: '#21759B' },
   { name: 'Git / GitHub', icon: 'https://cdn.simpleicons.org/github/ffffff', color: '#ffffff' },
   { name: 'Figma', icon: 'https://cdn.simpleicons.org/figma/F24E1E', color: '#F24E1E' },
-  { name: 'VS Code', icon: 'https://cdn.simpleicons.org/visualstudiocode/007ACC', color: '#007ACC' },
+  { name: 'VS Code', icon: '/assets/visual-studio-code.png', color: '#007ACC' },
 ];
 
 const softSkills = [
