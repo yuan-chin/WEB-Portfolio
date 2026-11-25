@@ -457,14 +457,16 @@ export default function Portfolio() {
 
                 <div className="reveal d1" style={{ marginTop: '16px' }}>
                   <p>I create clean and thoughtful interfaces, always considering the user experience from frontend to
-                    backend. I&apos;m <strong>eager</strong> to learn, grow under experienced mentors, and keep improving my
-                    skills.</p>
+                    backend. I recently completed my on-the-job training as an <strong>Endpoint Engineer Trainee at
+                    Cloudstaff</strong>, where I helped prepare 1,500 PCs for company deployment, and I built a full-stack
+                    <strong> Solar ERP</strong> for a direct client using React, TypeScript, and Supabase. I&apos;m{' '}
+                    <strong>eager</strong> to learn, grow under experienced mentors, and keep improving my skills.</p>
                 </div>
 
                 <div style={{ display: 'flex', gap: '32px', alignItems: 'flex-start', marginTop: '36px' }}>
                   <div className="reveal d2" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <p style={{ marginBottom: '24px' }}>Currently, I&apos;m <strong>open to internship opportunities</strong> in web development, ready to contribute and gain
-                      real-world experience.</p>
+                    <p style={{ marginBottom: '24px' }}>Currently, I&apos;m <strong>open to junior and entry-level roles</strong> as a Web,
+                      Front-End, or Full-Stack Developer, ready to contribute and build real-world solutions.</p>
                     <div>
                       <a href="#contact" className="btn btn-fill">Get In Touch</a>
                     </div>
@@ -675,7 +677,7 @@ export default function Portfolio() {
                 <div className="resume-section">
                   <h3 className="resume-section-title">Professional Summary</h3>
                   <p style={{ fontSize: '0.92rem', color: 'var(--muted)', lineHeight: '1.85' }}>
-                    3rd-year BSIT student at Holy Angel University specializing in web development. I build clean, user-focused web applications and am currently seeking a 2026 web development internship.
+                    3rd-year BSIT student at Holy Angel University specializing in web development. I build clean, user-focused web applications and am currently seeking a junior or entry-level web development role.
                   </p>
                 </div>
                 <div className="resume-section">
@@ -741,7 +743,7 @@ export default function Portfolio() {
             <p className="sec-label reveal">Reach Out</p>
             <h2 className="reveal d1" style={{ marginBottom: '60px' }}>Contact</h2>
             <p className="reveal d2" style={{ fontSize: '1rem', color: 'var(--muted)', marginTop: '12px', marginBottom: '60px', maxWidth: '520px', lineHeight: '1.8' }}>
-              I&apos;m available for internship opportunities. Whether you have a role, a project, or just a question — I&apos;d be glad to hear from you.
+              I&apos;m available for junior and entry-level web development roles. Whether you have a role, a project, or just a question — I&apos;d be glad to hear from you.
             </p>
             <div className="contact-grid">
               {/* Contact details */}
@@ -796,7 +798,7 @@ export default function Portfolio() {
                 </div>
                 <div className="avail-box reveal d3">
                   <div className="avail-label"><span className="avail-dot"></span>Availability</div>
-                  <p>Currently open to internship positions in 2026. Web development, frontend.</p>
+                  <p>Currently open to junior and entry-level roles. Web, front-end, and full-stack development.</p>
                 </div>
               </div>
 
